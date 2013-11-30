@@ -33,6 +33,7 @@ def evenBinaryReader(string):
 def main():
     m = ["max0","0max","001010100","0010111"]
     n = 1
+    print "Are the following values binary Even Numbers?:"
     for i in m:
         print str(n)+") "+i+" :"+str(evenBinaryReader(i))
         n = n+1
