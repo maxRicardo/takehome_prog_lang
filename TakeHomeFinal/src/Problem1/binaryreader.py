@@ -16,7 +16,28 @@ binary number or not.
 @return: Boolean 
 '''
 
-def evenBinarReader(string):
+def evenBinaryReader(string):
+    pattern = re.compile('[^a-zA-Z2-9][0|1]*[^a-zA-Z2-9][0]')
+    matcher = pattern.match(string)
+    
+    if matcher == None:
+        return None
+    
+    if string == matcher.group():
+        return True
+    else:
+        return False
+    
+
+
+def main():
+    m = ["max0","0max","001010100","0010111"]
+    for i in m:
+        print i+" :"+str(evenBinaryReader(i))
+        
+main()
+        
+    
     
     
     
