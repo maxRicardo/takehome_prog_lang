@@ -2,7 +2,7 @@
 Author: Max R. Berrios      
 Description: Bioinformatician 
 Date:  Nov 30, 2013  
-Purpose: 
+Purpose: Final Takehome
 '''
 
 import re
