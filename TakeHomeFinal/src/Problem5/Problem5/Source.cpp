@@ -9,7 +9,7 @@ int main(int argc, char argv[]){
 	printf("Implementation of Problem 5\n");
 	printf("\n\n=========================================\n\n");
 	
-	omp_set_num_threads(8);
+	//omp_set_num_threads(8);
 	omp_set_dynamic(8);
 	int id;
 	double inittime, finaltime;
