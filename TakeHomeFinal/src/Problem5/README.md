@@ -4,7 +4,7 @@ This Solution came with two parts :
 
 Part 1 [ Implementation ]:
   
-  1.openmp_implementations.h and openmp_implementations.c :
+  1. openmp_implementations.h and openmp_implementations.c :
     this implementation contains the 3 functions needed to 
     run and test the scheduling on the parallelization object
     
