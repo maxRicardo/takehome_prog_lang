@@ -4,22 +4,19 @@ Created on Dec 10, 2013
 @author: ricardo
 '''
 
-
-
-
 import Image
 
 
 
-
-#im = Image.open("test.jpeg")
-
 def main():
     im  = Image.open("resized.jpg")
-    
     print im.format, im.size, im.mode
     img = art_pic(im)
+    
+    #this part should be comment if 
+    #xv is not configured in your pc
     img.show()
+    #############################
     img.save("art_result.jpg")
 
 
@@ -63,9 +60,6 @@ def clearBlue(img):
     imgG = Image.composite(source[1], imgB, green_mask)
     imgR = Image.composite(source[0], imgG, red_mask)
 
-
-
-   
     return imgR
 
 
@@ -81,12 +75,8 @@ def clearGreen(img):
     imgB = Image.composite(source[2], imgG, blue_mask)
     imgR = Image.composite(source[0], imgB, red_mask)
 
-
-
    
     return imgR
-
-
 
 
 
@@ -101,9 +91,6 @@ def clearRed(img):
     imgR = Image.composite(source[0], img, red_mask)
     imgB = Image.composite(source[2], imgR, blue_mask)
     imgG = Image.composite(source[1], imgB, green_mask)
-
-
-
    
     return imgG
 
