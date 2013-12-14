@@ -18,14 +18,14 @@ int main(int argv, int ** argc){
 	printf("Dynamic Implementations: \n");
 	printf(" ================================================================\n\n");
 	for (i = 0;i<12;i+=2){
-		for (ii = 0;ii<1;ii+=2){
+		for (ii = 0;ii<2;ii++){
 			printf("\n---------------------------------------------\n");
 			if(ii == 0){
-				printf("Delay %d times  in no-nowait mode\n",i);
+				printf("Delay %d times  in nowait mode\n",i);
 
 			}
 			else{
-				printf("Delay %d times  in nowait mode\n",i);
+				printf("Delay %d times  in no-nowait mode\n",i);
 			}
 			printf("\n---------------------------------------------\n");
 			Dynamic(i,ii);
@@ -39,14 +39,14 @@ int main(int argv, int ** argc){
 	printf("Static Implementations: \n");
 	printf(" ================================================================\n\n");
 	for (j = 0;j<12;j+=2){
-		for (jj = 0;jj<1;jj+=2){
+		for (jj = 0;jj<2;jj++){
 			printf("\n---------------------------------------------\n");
 			if(jj == 0){
-				printf("Delay %d times  in no-nowait mode\n",j);
+				printf("Delay %d times  in nowait mode\n",j);
 
 			}
 			else{
-				printf("Delay %d times  in nowait mode\n",j);
+				printf("Delay %d times  in no-nowait mode\n",j);
 			}
 			printf("\n---------------------------------------------\n");
 			Static(j,jj);
@@ -59,14 +59,14 @@ int main(int argv, int ** argc){
 	printf("Static Implementations: \n");
 	printf(" ================================================================\n\n");
 	for (k = 0;k<12;k+=2){
-		for (kk = 0;kk<1;kk+=2){
+		for (kk = 0;kk<2;kk++){
 			printf("\n---------------------------------------------\n");
 			if(kk == 0){
-				printf("Delay %d times  in no-nowait mode\n",k);
+				printf("Delay %d times  in nowait mode\n",k);
 
 			}
 			else{
-				printf("Delay %d times  in nowait mode\n",k);
+				printf("Delay %d times  in no-nowait mode\n",k);
 			}
 			printf("\n---------------------------------------------\n");
 			Guided(k,kk);
